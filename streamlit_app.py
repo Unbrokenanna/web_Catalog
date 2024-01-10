@@ -9,7 +9,7 @@ import pandas
 # my_data_row = my_cur.fetchone()
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
-
+streamlit.set_page_config(layout="wide")
 streamlit.title('Anna\'s Amazing Catalog')
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
