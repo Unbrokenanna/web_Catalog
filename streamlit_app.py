@@ -39,4 +39,13 @@ caption= product_caption
 streamlit.write('Price: ', df2[1])
 streamlit.write('Sizes Available: ',df2[2])
 streamlit.write(df2[3])
-streamlit.footer('Made by Anna Fedosova')
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: visible;}
+       </style>
+       <footer> Made by Anna Fedosova </footer>
+        """
+       
+streamlit.markdown(hide_default_format, unsafe_allow_html=True)
+# streamlit.footer('Made by Anna Fedosova')
