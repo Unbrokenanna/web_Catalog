@@ -43,11 +43,11 @@ hide_default_format = """
        <style>
        #MainMenu {visibility: hidden; }
        footer {visibility: visible;
-                height: 80px;
+                height: 10px;
                 margin-top: -80px;
-                background:red;
+               
                 text-align:center;
-                font-size:42px;}
+                font-size:15px;}
        </style>
        <footer> Made by Anna Fedosova </footer>
         """
