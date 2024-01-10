@@ -1,5 +1,5 @@
 import streamlit
-import snowflake.connector
+from snowflake import connector
 
 streamlit.title('Web Catalog')
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
