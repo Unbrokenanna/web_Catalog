@@ -42,7 +42,12 @@ streamlit.write(df2[3])
 hide_default_format = """
        <style>
        #MainMenu {visibility: hidden; }
-       footer {visibility: visible;}
+       footer {visibility: visible;
+                height: 80px;
+                margin-top: -80px;
+                background:red;
+                text-align:center;
+                font-size:42px;}
        </style>
        <footer> Made by Anna Fedosova </footer>
         """
